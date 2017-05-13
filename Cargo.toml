@@ -1,0 +1,17 @@
+[package]
+name = "ui-color"
+version = "0.0.1"
+authors = ["Bruce Mitchener <bruce.mitchener@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = ""
+keywords = ["ui", "user interface", "color"]
+homepage = "https://github.com/endoli/ui-color.rs"
+repository = "https://github.com/endoli/ui-color.rs"
+documentation = "https://endoli.github.io/ui-color.rs/"
+
+[features]
+webrender = ["webrender_traits"]
+
+[dependencies]
+webrender_traits = { git = "https://github.com/servo/webrender", rev = "be5a41ec", optional = true }
