@@ -14,7 +14,9 @@
 #[cfg(feature = "webrender")]
 extern crate webrender_traits;
 
+pub mod cmyk;
 pub mod hsla;
+pub mod hsva;
 pub mod rgba;
 
 #[allow(missing_docs)]
